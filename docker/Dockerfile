@@ -1,7 +1,6 @@
 FROM tomcat:8.0.45-jre8
 
-ENV AGENT_FILE_PATH=/usr/local/tomcat/agent \
-    COLLECTOR_SERVER=127.0.0.1
+ENV COLLECTOR_SERVER=127.0.0.1
 
 COPY catalina.sh /usr/local/tomcat/bin/
 COPY opentracing-case.war /usr/local/tomcat/webapps
