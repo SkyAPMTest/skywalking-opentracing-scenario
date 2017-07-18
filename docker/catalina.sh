@@ -104,6 +104,7 @@
 #                   case the default is "true"
 # -----------------------------------------------------------------------------
 
+export AGENT_FILE_PATH=/usr/local/tomcat/agent
 if [ -f "${AGENT_FILE_PATH}/skywalking-agent.jar" ]; then
     CATALINA_OPTS="$CATALINA_OPTS -javaagent:${AGENT_FILE_PATH}/skywalking-agent.jar -DconfigPath=/usr/local/tomcat/agent-config"
 fi
